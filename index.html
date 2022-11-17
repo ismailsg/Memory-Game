@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Mémoire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jeux de Mémoire</h1>
+  
+    <div class="game">
+        <div class="game-settings">
+            <h2>High Score : <span class="high-score" style="font-weight: bold;">0</span></h2>
+            <!-- <button class="non-game-button shuffle-2-random" displa>Shuffle 2 random</button> -->
+            <!-- <button class="non-game-button show-all">Show All</button>
+            <button class="non-game-button hide-all">Hide All</button> -->
+            <button class="start-card-flip">Start Game</button>
+            <button class="game-button end-card-flip" disabled>End Game</button>
+            <button class="reset-card-flip">Reset</button>
+            <button class="game-button help"  >Help</button>
+            <div style="margin:10px;">
+                Difficulty:
+                <label for="easy">Easy</label>
+                <input type="radio" name="difficulty" id="easy" value="easy" checked onclick="easy()"/>
+                <label for="medium">Medium</label>
+                <input type="radio" name="difficulty" id="medium" value="medium" onclick="medium()" />
+                <label for="difficult">Hard</label>
+                <input type="radio" name="difficulty" id="difficult" value="difficult " onclick="hard()"/>
+                
+                <!-- <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy   60s</option>
+                    <option value="medium">Medium   60s</option>
+                    <option value="hard">Hard 30s</option>
+                </select>  -->
+            </div> 
+        </div>
+        <div class="game-stats">
+            <div class="game-stat">
+                Your Total is : <span class="total-score" style="font-weight: bold;">0</span>
+            </div>
+            <div class="game-stat">
+                Time : <span class="time-left">60 s</span>
+            </div>
+            <div class="game-stat score">
+                
+            </div>
+        </div>
+        <div class="card-field">
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/1.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/1.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/2.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/2.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/3.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/3.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/4.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/4.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/5.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/5.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/6.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/6.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/7.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/7.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/8.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+            <div class="card-holder" ><img class="flip cardFace" width="125px" height="200px" src="images/8.png" /><img class="flip cardBack" src="images/0.jpg"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

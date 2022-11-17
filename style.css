@@ -1,0 +1,61 @@
+body {
+background: url("images/green.jpg");
+background-size:1375px;
+
+}
+h1 {
+text-align: center;
+}
+button{
+    margin: 10px;
+    background-color: aqua;
+}
+
+.card-field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    padding:20px;
+}
+.card-holder{
+    width: 125px;
+    height:200px;
+    position: relative;
+    transition: left 300ms, top 300ms;
+}
+
+.card-holder img{
+    position: absolute;
+    top: 0;  left: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 500ms;
+}
+/* .cardBack{
+
+} */
+
+.card-holder .flip.cardBack{
+    transform: perspective(2000px) rotateY(0deg);   
+}
+.card-holder .flip.cardFace{
+    transform: perspective(1000px) rotateY(-180deg);
+}
+.card-holder:hover .flip.cardBack{
+    transform: perspective(1000px) rotateY(180deg);   
+}
+.card-holder:hover .flip.cardFace{
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.game-stat{
+    margin: 10px;
+}
+.game-settings {
+    text-align: center;
+}
+
+.game-stats {
+    text-align: center;
+}
